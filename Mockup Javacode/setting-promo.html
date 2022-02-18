@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>back_end_javacode_js2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="ng-scope">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-md-12 d-none d-sm-block">
+                    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light shadow-sm">
+                        <div class="container-fluid"><a class="navbar-brand logo-header" href="index.html" style="border-style: none;"><img class="img-fluid" src="assets/img/Java%20Code.png" width="100%"></a>
+                            <div class="d-none d-sm-block topbar-divider-kiri"></div><button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navcol-1">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item" style="margin-right: 1rem;">
+                                        <div class="nav-item dropdown nav-setting-link"><a class="active nav-setting-link" aria-expanded="false" data-bs-toggle="dropdown" href="setting-menu.html">Setting</a>
+                                            <div class="dropdown-menu"><a class="dropdown-item" href="setting-menu.html">Menu</a><a class="dropdown-item" href="setting-customer.html">Customer</a><a class="dropdown-item" href="setting-promo.html">Promo</a><a class="dropdown-item" href="setting-diskon.html">Diskon</a><a class="dropdown-item" href="voucher-customer.html">Voucher</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="nav-item dropdown nav-setting-link"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-setting-link" href="#">Laporan</a>
+                                            <div class="dropdown-menu"><a class="dropdown-item text-capitalize" href="rekap-penjualan-menu.html">Penjualan menu</a><a class="dropdown-item text-capitalize" href="rekap-penjualan-customer.html">penjualan customer</a><a class="dropdown-item text-capitalize" href="laporan-penjualan.html">Penjualan</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="collapse navbar-collapse d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-end justify-content-xl-end" id="navcol-2">
+                                <ul class="navbar-nav d-lg-flex d-xl-flex d-xxl-flex align-items-lg-center align-items-xl-center align-items-xxl-center ml-auto">
+                                    <li class="nav-item d-xl-flex d-xxl-flex"></li>
+                                    <li class="nav-item"></li>
+                                </ul>
+                                <ul class="navbar-nav d-lg-flex d-xl-flex d-xxl-flex flex-nowrap ms-auto align-items-lg-center align-items-xl-center align-items-xxl-center">
+                                    <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                        <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                            <form class="me-auto navbar-search w-100">
+                                                <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                                    <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown no-arrow mx-1">
+                                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                                <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <div class="me-3">
+                                                        <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                                    </div>
+                                                    <div><span class="small text-gray-500">December 12, 2019</span>
+                                                        <p class="notification-timestamp">A new monthly report is ready to download!</p>
+                                                    </div>
+                                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <div class="me-3">
+                                                        <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                                    </div>
+                                                    <div><span class="small text-gray-500">December 7, 2019</span>
+                                                        <p class="notification-timestamp">$290.29 has been deposited into your account!</p>
+                                                    </div>
+                                                </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                                    <div class="me-3">
+                                                        <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                                    </div>
+                                                    <div><span class="small text-gray-500">December 2, 2019</span>
+                                                        <p class="notification-timestamp">Spending Alert: We've noticed unusually high spending for your account.</p>
+                                                    </div>
+                                                </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown no-arrow mx-1">
+                                        <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                                    </li>
+                                    <div class="d-none d-sm-block topbar-divider"></div>
+                                    <li class="nav-item dropdown no-arrow">
+                                        <div class="nav-item dropdown nav-setting"><a class="dropdown-toggle d-xl-flex align-items-xl-center" aria-expanded="false" data-bs-toggle="dropdown" href="#"><img class="img-fluid" style="height: 3rem;width: 3rem;margin-right: 15px;border-radius: 100%;box-shadow: 1px 1px 4px rgba(46,46,46,0.5);" width="100%" src="assets/img/avatars/avatar3.jpeg"><span style="font-size: medium;font-weight: bold;letter-spacing: 1px;">Admin</span></a>
+                                            <div class="dropdown-menu"><a class="dropdown-item" href="user.html"><i class="fa fa-user fa-admin"></i>User</a><a class="dropdown-item" href="hak-akses.html"><i class="fa fa-sign-out fa-admin"></i>Hak Akses</a><a class="dropdown-item" href="login.html"><i class="fa fa-sign-out fa-admin"></i>Logout</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="div-form" style="/*padding: 0px 50px 0px 50px;*/padding-bottom: 0px;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-lg-flex header-tabeldiv">
+                                    <div class="row" style="width: 100%;">
+                                        <div class="col-9">
+                                            <h2 class="text-capitalize fw-bold m-0 heading-judul">setting promo</h2>
+                                        </div>
+                                        <div class="col text-end">
+                                            <ul class="d-lg-flex justify-content-lg-end breadcrumb m-0">
+                                                <li class="breadcrumb-item ng-star-inserted"><a href="index.html">Setting</a></li>
+                                                <li class="breadcrumb-item active ng-star-inserted">Promo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card dashboard">
+                            <div class="card-body">
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <div class="p-2" style="/*padding-bottom: 10px!important;*/">
+                                            <form class="form-horizontal ng-untouched ng-pristine ng-invalid">
+                                                <div class="form-group mb-3"><label class="form-label f-label" for="email">Nama</label><input class="form-control ng-pristine ng-invalid ng-touched" type="text" id="nama" name="nama" placeholder="Nama"></div>
+                                                <div class="form-group mb-3"><label class="form-label f-label" for="email">Type</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-text" style="padding: 0px;">
+                                                            <div class="btn-group" role="group"><button class="btn btn-primary filter active" type="button">Diskon</button><button class="btn btn-primary filter" type="button">Voucher</button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-3"><label class="form-label f-label" for="email">Diskon</label>
+                                                    <div class="input-group"><input class="form-control" type="text" placeholder="10%"></div>
+                                                </div>
+                                                <div class="form-group mb-3"><label class="form-label f-label" for="email">Harga</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <div class="input-group-text -prepend"><span class="btn-show-pass" style="cursor: pointer;"><span>RP</span></span></div><input class="form-control" type="text" placeholder="20.000">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-3"><label class="form-label f-label" for="email">Kadaluarsa</label><select class="form-select form-control" style="max-width: 17%;">
+                                                        <optgroup label="This is a group">
+                                                            <option value="12" selected="">1 day</option>
+                                                            <option value="13">This is item 2</option>
+                                                            <option value="14">This is item 3</option>
+                                                        </optgroup>
+                                                    </select></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" style="border-bottom-color: #2e2e2e;">
+                                        <div class="container">
+                                            <div class="column"></div>
+                                            <div class="mt-4" style="background: #dcdcdc;height: 315px;border-radius: .8rem;cursor: pointer;">
+                                                <h1 class="heading-styling"><i class="fa fa-image img-promo"></i><br>Upload Image</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <div class="syarat">
+                                            <h3 class="text-center heading-terms mb-3">Terms &amp; Conditions<br></h3>
+                                            <p style="font-size: .8rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lacus, imperdiet in condimentum in, finibus eget velit. Nulla et erat eu leo hendrerit aliquam id quis orci. Vestibulum sollicitudin, eros nec fermentum tempor, eros ipsum pulvinar sem, ac molestie erat velit in quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus gravida urna. Curabitur nec rhoncus ex. Aenean facilisis ante et dictum malesuada. Nulla porttitor massa dui, sodales venenatis tellus cursus nec. Etiam ac tristique justo.Aenean lobortis dignissim felis, sed efficitur lacus pharetra eu. Curabitur viverra ante id enim sollicitudin faucibus. Nullam lobortis diam ante, quis faucibus velit pharetra id. Praesent ac eleifend eros. Integer interdum dolor molestie, pretium augue ut, pellentesque ante. Quisque sit amet suscipit magna. Aenean et lorem porttitor ipsum elementum iaculis.Duis urna metus, ullamcorper a ex eu, volutpat egestas neque. Vestibulum lorem lacus, dapibus id semper quis, sodales nec odio. Suspendisse ullamcorper imperdiet libero at volutpat. Ut eu justo sed ligula molestie tristique nec eu arcu. Aliquam tempus nulla posuere efficitur interdum. Sed ultricies ultrices aliquet. Sed ac metus consequat, tincidunt elit eget, malesuada lectus. Maecenas euismod pharetra est, sed luctus mauris dignissim vel. Cras convallis, ante et sollicitudin hendrerit, neque libero consectetur nisi, id porta eros nisl a libero.Suspendisse sed pretium nunc. Etiam semper tortor nisi, et eleifend massa malesuada porta. Sed sodales, augue in tempus malesuada, metus sem placerat velit, non faucibus orci tellus sed arcu. Fusce tellus justo, tincidunt eu risus pulvinar, posuere dapibus erat. Donec pharetra quam sit amet tortor consectetur, sed maximus turpis commodo. Nunc maximus, odio eget pellentesque interdum, elit arcu pharetra sapien, at pretium elit risus eu turpis. Praesent mollis venenatis tristique. Phasellus in dapibus nisl. Donec porta eros odio.<br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-end"><button class="btn btn-primary btn-simpan" type="button">Simpan</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/DateRangePicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
